@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+}
+html{
+    font-size: 10px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #16493f;
+    border-radius: 20px;
+}
+.body{
+    z-index: -10;
+}
+.parent{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(back3.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    
+}
+
+.leaf{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 135rem;
+}
+
+.navbar{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+   
+}
+.navbar h2{
+    font-size: 40px;
+    z-index: 999999;
+}
+.option{
+    border-radius: 20px;
+    width:500px;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    align-items: center;
+    padding: 0px 10px 0 10px;
+    background-color: rgba(54, 54, 54, 0.4);
+    backdrop-filter: blur(10px);
+}
+.leaf2{
+    position: absolute;
+    width: 61px;
+}
+
+.parent h1{
+    font-size: 13rem;
+    color: rgb(0, 0, 0);
+}
+
+#leaf2{
+    top:10%;
+}
+#leaf3{
+    left: -15px;
+}
+
+#leaf4{
+    z-index: -1;
+    top: 42%;
+}
+#leaf5{
+    top: 80%;
+    left: 80%;
+    filter: blur(2px);
+    z-index:1;
+}
+#leaf6{
+    left: 30%;
+    top: 53%;
+}
+#side{
+    position: absolute;
+    width: 300px;
+    top:-25rem;
+    left: -20px;
+    transform: rotateZ(90deg);
+    filter:blur(3px) ;
+}
+.tree{
+    width: 20rem;
+    left: 30%;
+    bottom: -10%;
+    position: absolute;
+    z-index: 999999;
+}
+#btree2{
+    left: 60%;
+    
+}
+#btree3{
+    left: 10%;
+   
+}
+#btree4{
+    left: 80%;
+}
+.fly{
+    position: absolute;
+    width: 30px;
+    
+    z-index: -1;
+}
+#fly2{
+ top: 15%;
+ left: 0;
+ animation: fly 130s infinite;
+}
+#fly3{
+    top: 20%;
+    left: -10%; 
+    animation: fly 200s infinite;  
+}
+#fly4{
+    top: 25%;
+    left:-7%;
+    animation: fly 220s infinite;
+}
+#fly1{
+    width: 130px;
+    transform: rotateY(180deg);
+    z-index: 99999999;
+    left: 100%;
+    animation: fly2 100s infinite;
+}
+@keyframes fly2 {
+    100%{
+        left: -100%;
+    }
+}
+@keyframes fly{
+    100%{
+        left: 200%;
+        
+    }
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(22 171 169);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    html{
+        font-size: 5px;
+    }
+    .tree {
+        width: 30rem;
+        left: 39%;
+        bottom: -4%;
+    }
+    #side{
+        width: 183px;
+    top: 6rem;
+    }
+        
+}
+@media (max-width:371px){
+    #jtext{
+        font-size:12rem;
+    }
+}
+@media (max-width:347px){
+    #jtext{
+        font-size:7rem;
+    }
+}
+/* parent2 */
+.parent2{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.parent2 h1{
+    font-size: 13rem;
+    color: white;
+    position: absolute;
+    top: -140px;
+    overflow: hidden;
+}
