@@ -1,1 +1,0 @@
-# jharkhandHeritage.github.io
