@@ -8,6 +8,7 @@
 html{
     font-size: 10px;
 }
+
 ::-webkit-scrollbar{
     width: 10px;
     background-color: rgb(0, 0, 0);
@@ -81,20 +82,35 @@ html{
 
 #leaf2{
     top:10%;
+    transform: rotateZ(20deg);
+    animation: l1 20s infinite;
+}
+@keyframes l1 {
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transition: 20s ease-in-out;
+    }
 }
 #leaf3{
     left: -15px;
+    transform: rotateZ(80deg);
+    animation: l1 200s reverse infinite;
 }
 
 #leaf4{
     z-index: -1;
     top: 42%;
+    transform: rotateZ(180deg);
+    animation: l1 125s infinite;
 }
 #leaf5{
     top: 80%;
     left: 80%;
     filter: blur(2px);
     z-index:1;
+    transform: rotateZ(120deg);
 }
 #leaf6{
     left: 30%;
@@ -209,16 +225,76 @@ html{
 .parent2{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background: rgb(1, 15, 14);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
+
 }
-.parent2 h1{
-    font-size: 13rem;
-    color: white;
+
+.earth{
     position: absolute;
-    top: -140px;
+    bottom:-30px;
+    left:180%;
+    transform: rotateZ(-30deg);
+    filter: drop-shadow(-10px 0px 418px rgb(17, 130, 168));
+    animation: bright 200s infinite;
+    z-index: 0;
+}
+/* .changer{
+    position: absolute;
+    bottom: -95px;
+    width: 100vw;
+    transform: rotateZ(180deg);
+} */
+@keyframes bright{
+    0%{
+        transform:rotateZ(360deg);
+    }
+    100%{
+        transform:rotateZ(-360deg);
+        
+    }
+}
+.contentp2{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    width: 58rem;
+    animation: float 10s infinite;
+   
+}
+
+.svgmap{
+   width: 100%;
+}
+.svgmap path:hover{
+   filter:brightness(2);
+   cursor: pointer;
+
+}
+
+
+@keyframes float {
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+
+
+/* parent3 */
+.parent3{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(238 244 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }

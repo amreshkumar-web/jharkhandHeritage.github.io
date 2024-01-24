@@ -9,12 +9,13 @@ var leaf3=document.getElementById("leaf3");
 var leaf4=document.getElementById("leaf4");
 var leaf5=document.getElementById("leaf5");
 var side=document.getElementById("side");
-
-
+//parent 2
+var earth=document.getElementById("earth");
+var reset=0;
 
 window.addEventListener('scroll',() => {
     let value=window.scrollY;
-    console.log(value);
+    
     if(value>=500){
         document.getElementById("nav").style.transition="background-color 2s ease";
         document.getElementById("nav").style.backgroundColor="rgb(255,255,255,0.4)";
@@ -45,4 +46,26 @@ window.addEventListener('scroll',() => {
     leaf4.style.marginLeft=value * 1.7 +'px';
     leaf4.style.marginTop=value * 1.7 +'px';
     side.style.marginLeft=-value*1.1 + 'px';
+
+    //parent 2 earth
+    if(value>=400){
+        earth.style.transition="left 2s ease";
+        earth.style.left="80%";
+    }
+    else{
+        earth.style.transition="left 3s ease";
+        earth.style.left="180%";
+    }
+
+    
+    if(value>=1070){
+        value=value-1080
+        console.log(value);
+        earth.style.transition="left 2s ease";
+   if(value>=80){
+    earth.style.left=value+'%';
+   }
+    
+    }
+
 })
