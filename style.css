@@ -272,6 +272,7 @@ html{
 
 .svgmap{
    width: 100%;
+   box-shadow: -3px -3px 7px white,3px 3px 7px black ;
 }
 .svgmap path:hover{
    filter:brightness(2);
@@ -289,12 +290,44 @@ html{
 
 
 /* parent3 */
-/* .parent3{
+.parent3{
     width: 100vw;
     height: 100vh;
-    background: rgb(238 244 250);
+    background: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-} */
+    flex-wrap: wrap;
+}
+.mapcontent{
+    width: 40%;
+    height: 45rem;
+    background: #e0e0e0;
+    border-radius: 42px;
+    box-shadow: inset 17px 17px 34px #cacaca,
+    inset -17px -17px 24px #f6f6f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.cityName
+{
+   width: 80%;
+   height: 80px;
+   background: #e0e0e0;
+    border-radius: 29px;
+    box-shadow: -7px -7px 34px #d8d8d89f,
+     7px 7px 14px #0000003e;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2.5rem;
+}
+
+.stname{
+    color: #c7c7c7 ;
+    text-shadow: -7px -7px 15px #e9e3e3,
+    7px 4px 5px #00000013;
+}
