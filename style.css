@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -224,7 +225,7 @@ html{
 /* parent2 */
 .parent2{
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background: rgb(1, 15, 14);
     display: flex;
     justify-content: center;
@@ -258,6 +259,46 @@ html{
         
     }
 }
+
+
+.history{
+    color: rgb(92, 92, 92);
+    font-weight: BOLDER;
+    font-size: 8rem;
+}
+
+
+
+#spaceship{
+    position: absolute;
+    width: 100px;
+    transform: rotateZ(-75deg);
+    left:120% ;
+    top: 80%;
+   animation: spaceship 10s ease-in-out infinite;
+   
+}
+.spaceship:nth-of-type(n+2) {
+    animation-delay: 5s; /* Subsequent iterations have a 5-second delay */
+}
+@keyframes spaceship {
+   100%{
+    left: -20%;
+    top: 10%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .contentp2{
     overflow: hidden;
     display: flex;
@@ -299,7 +340,11 @@ html{
     align-items: center;
     overflow: hidden;
     flex-wrap: wrap;
+    background: linear-gradient(rgba(0, 0, 0, 0.641), rgba(0, 0, 0, 0.658)), url(p2.png) center no-repeat;
+    background-size: cover;
 }
+
+
 .mapcontent{
     width: 40%;
     height: 45rem;
@@ -331,3 +376,148 @@ html{
     text-shadow: -7px -7px 15px #e9e3e3,
     7px 4px 5px #00000013;
 }
+
+
+
+
+
+.flex-container {
+	height: 100vh;
+    width: 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	padding: 3em 1em;
+
+	.flex-item {
+		margin: 25px;
+    border-radius: 7px;
+    padding: 20.5em 23em; /* Increase the padding values */
+    position: relative;
+    font-weight: 600;
+
+		a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+            flex-direction: column;
+            gap: 20px;
+			text-decoration: none;
+			text-align: center;
+			color: #ffffff;
+
+			font-size: 24px;
+			line-height: 1.5;
+			transition: 600ms ease;
+
+			span {
+				transform: translateZ(50px) scale(0.7);
+			}
+		}
+	}
+}
+
+.flex-container span{
+    font-size: 6rem;
+    font-weight: bolder;
+}
+.flex-container p{
+    font-size: 1.5rem;
+    color: rgb(189, 189, 189);
+    font-weight: lighter;
+}
+.tilt {
+    border-radius: 5px;
+    box-shadow: 7px 25px 32px -7.5px rgba(0, 0, 0, 0.688); /* Increase the shadow size */
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+   
+}
+
+.bg-one {
+    position: relative;
+	/* background: linear-gradient(45deg, rgb(0, 0, 0), rgb(80, 130, 109)); */
+    background: url(ranchi.jpg) center no-repeat;
+    background-size: cover;
+}
+.bg-one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.525); /* Adjust the alpha value to control darkness */
+}
+
+.bg-two {
+	background: linear-gradient(45deg, rgb(255, 95, 75), rgb(130, 21, 100));
+}
+
+
+
+
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+.rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.clikmore{
+    width: 140px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    transition: 0.5s;
+}
+.clikmore:hover{
+    color: black;
+    background-color: rgb(50, 238, 50);
+    border: 2px solid green;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
