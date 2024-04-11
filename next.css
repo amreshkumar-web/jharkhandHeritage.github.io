@@ -396,15 +396,27 @@ html{
 
 
 /* parent2 */
-.parent2{
+.parent2 {
     position: relative;
     display: flex;
     flex-direction: row;
     padding: 0;
     overflow: hidden;
-   /*  background: url(mention2.gif) center no-repeat;
-    background-size:contain;    */
+    position: relative;
 }
+
+/* .parent2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(treegif.gif) center no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+} */
 /* .parent2 video {
     position: absolute;
     top: 0;
@@ -436,12 +448,14 @@ html{
     height: 60rem;
     border-radius: 30px;
 
-background: rgba(119, 115, 115, 0.377);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8px);
--webkit-backdrop-filter: blur(5.1px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(9, 8, 8, 0.18);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
 
    
     display: flex;
@@ -451,16 +465,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .menubar{
     width: 100%;
     height: 70px;
-    
     display: flex;
-background: rgba(160, 160, 160, 0.24);
-
-box-shadow: 0 4px 30px rgba(229, 229, 229, 0.1);
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(5.1px);
-border: 1px solid rgba(192, 192, 192, 0.3);
+    background: rgba(9, 8, 8, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(9, 8, 8, 0.3);
 
     
+}
+
+.section::-webkit-scrollbar{
+    display: none;
 }
 
 .btn {
@@ -530,18 +546,111 @@ border: 1px solid rgba(192, 192, 192, 0.3);
 
 .part1{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 .hotel{
     width: 80%;
     height: 100px;
     border-radius: 30px;
     overflow-x: auto;
-    background: rgba(0, 0, 0, 0.203);
-/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.256); */
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(5.1px);
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(0, 0, 0, 0.27);
+display: flex;
+align-items: center;
+overflow-x: auto;
+justify-content: space-around;
+
+
+
 
 }
+
+.hotel1{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    transition: 0.5s ease-in-out;
+    opacity: 0.7;
+  
+}
+
+.hotel1{
+    background: url(hotel1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#hotel2{
+    background: url(hotel2.png) center no-repeat;
+   background-size: cover;
+}
+.hotel1:hover{
+    transform: translateY(-8px);
+    opacity: 1;
+   
+}
+
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.gimage{
+    width: 33%;
+    height: 30%;
+    gap: 5px;
+    background-color: red;
+}
+
+.placedesc{
+    max-width: 90%;
+    height: 500px;
+    background-color: black;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: auto;
+    
+}
+
+.placedesc h1{
+    font-size: 4rem;
+   min-height: 5rem;
+}
+/*  p:first-child {
+    font-size: 221px;
+    min-height: 30rem;
+} */
+.placedesc p:first-of-type {
+    font-size: 22px;
+    min-height: 20rem;
+  }
+  .placedesc p {
+    font-size: 22px;
+    min-height: 16rem;
+  }
+  .placedesc p:last-of-type{
+    font-size: 22px;
+    min-height: 30rem;
+  }

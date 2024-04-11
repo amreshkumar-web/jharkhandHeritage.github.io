@@ -144,20 +144,11 @@ var loginflag=false;
         var password = document.getElementById("loginpassword").value;
         
             if (username === "project@gmail.com" && password === "sep@9835") {
+                alert("Login successful!");
                 window.location.href = "mainpage.html"; // Redirect to nextpage.html upon successful login
-            }
-        else if (username === "amresh@gmail.com" && password === "sep@9835") {
-            window.location.href = "mainpage.html"; // Redirect to nextpage.html upon successful login
+            }else {
+            alert("Incorrect username or password!");
         }
-        else if (username === "vikas@gmail.com" && password === "sep@9835") {
-            window.location.href = "mainpage.html"; // Redirect to nextpage.html upon successful login
-        }
-        else if (username === "kriti@gmail.com" && password === "sep@9835") {
-            window.location.href = "mainpage.html"; // Redirect to nextpage.html upon successful login
-        }
-        else {
-        alert("Incorrect username or password!");
-    }
     });
     
 
