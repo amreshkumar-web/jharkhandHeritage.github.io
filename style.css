@@ -21,12 +21,6 @@ html{
 .body{
     z-index: -10;
 }
-.mainparent{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: auto;
-}
 .parent{
     position: relative;
     width: 100vw;
@@ -338,10 +332,8 @@ html{
 
 /* parent3 */
 .parent3{
-    
     width: 100vw;
     height: 100vh;
-    top: 210vh;
     background: #e0e0e0;
     display: flex;
     justify-content: center;
@@ -521,8 +513,6 @@ html{
     border-radius: 20px;
     font-size: 1.8rem;
     transition: 0.5s;
-    position: absolute;
-    bottom: 10px;
 }
 .clikmore:hover{
     color: black;
@@ -530,179 +520,4 @@ html{
     border: 2px solid green;
 }
 
-
-/* parent3 */
-
-.parent4{
- 
-    width: 100vw;
-    height: 100vh;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.fest{
-    
-    font-size: 3.5rem;
-}
-.ptxt{
-    font-size: 1.5rem;
-    font-weight: lighter;
-}
-
-.calendar{
-    min-width:100vw;
-    height: 70vh;
-    position: relative;
-    display: flex;
-    align-items:center ;
-    flex-wrap: wrap;
-    gap: 60px;
-    justify-content: center;
-}
-.festbtn{
-    width: 20%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0 10px 0;
-   
-}
-.festimg {
-    width: 50rem;
-    height: 45rem;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    background-image: url(republic.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 1px 2px 18px rgb(0, 0, 0,0.4),inset 1px 2px 18px rgb(0, 0, 0,0.3);
-    animation: no;
-    animation-iteration-count: 1;
-}
-@keyframes popup{
-    20%{
-        scale: 0.8;
-    }
-    50%{
-       scale: 1.07;
-       box-shadow:1px 2px 8px rgb(0, 0, 0,0.5) ;
-    }
-}
-.festimg img{
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
-}
-.yearBtn{
-    width:20rem;
-    height: 55px;
-    background-color: red;
-    border: 1px solid goldenrod;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out ;
-    box-shadow: 1px 2px 3px rgb(0, 0, 0,0.5),inset 1px 2px 8px rgba(255, 255, 255, 0.4);
-}
-#btn1,#btn2,#btn3,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9,#btn10,#btn11,#btn12{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(jan.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    gap: 5px;
-    padding-left: 4px;
-    align-items: center;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 15PX;
-    font-family: 200;
-    color: rgb(255, 255, 255);
-    position: relative;
-    overflow: hidden;
-}
-#btn2{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(feb.jpg);
-}
-#btn3{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(mar.jpg);
-}
-#btn4{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(april.jpg);
-}
-#btn5{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(may.jpg);
-}
-#btn6{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(june.jpg);
-}
-.shine{
-    position: absolute;
-    width: 35px;
-    height: 190%;
-    background-color: rgba(255, 255, 255, 0.6);
-    filter: brightness(4);
-    backdrop-filter: blur(1px);
-    left: -50%;
-    transform:rotateZ(30deg);
-    transition: 01s ease-out ;
-    box-shadow:0px 0px 28px rgb(255, 255, 255,1);
-    
-    
-}
-
-.yearBtn:hover .shine{
-    left:120%;
-}
-.yearBtn:not(:hover){
-    .shine{
-        transition: 0s;
-        opacity: 0;}
-}
-.yearBtn:hover{
-    transform: scale(1.1);
-    box-shadow: 1px 4px 8px rgb(0, 0, 0);
-    cursor: pointer;
-    filter: contrast(1.5);
-}
-
-#btn7{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(july.jpg); ;
-}
-#btn8{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(aug.jpg); ;
-}
-#btn9{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(sep.jpg); ;
-}
-#btn10{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(oct.jpg); ;
-}
-#btn11{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(nov.jpg); ;
-}
-#btn12{
-    background-image:linear-gradient(to right,rgb(0, 0, 0,0.2),rgb(0, 0, 0,0.2)), url(dec.jpg); ;
-}
-.splash{
-    position: absolute;
-    width: 100vw;
-    height: 110px;
-    top: -20px;
-    display: none;
-}
-
-
-
-/* .festcontent{
-    width: 95%;
-    height: 95%;
-    background-color: pink;
-} */
-
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */

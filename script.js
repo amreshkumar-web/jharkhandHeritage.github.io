@@ -99,23 +99,6 @@ VanillaTilt.init(tilt, {
 
 
 
-function explore(){
-   
-        window.location.href = "nextpage.html"; 
-    
-}
-
-function main(header, para, link, img) {
-    alert("hello")
-    document.getElementById("cardstate").innerHTML = header;
-    document.getElementById("cardpara").innerHTML = para;
-    document.getElementById("cardlink").href = link;
-    document.getElementById("backcard").style.background = `url(${img})`;
-}
-
-function ranchi() {
-    main("bit", "kjbdsdbfjbjdbkbksdbv", "http://www.google.com", "ksdbkasj.png");
-}
 
 
 
